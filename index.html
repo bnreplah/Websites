@@ -1,1441 +1,331 @@
 
 <!doctype html>
-
-<html lang="en">
-
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# YOURCOMPANY: http://ogp.me/ns/fb/YOURCOMPANY#">
-
-    <title>
-NAME OF YOUR SITE | Q</title>
-
-
-  <!-- css for phone -->
-
-  <style media="screen">
-
-      @charset 'UTF-8';
-	  .form-control,nav
-	  {display:block}
-	  
-	  .btn,img{
-	  vertical-align:middle
-	  }
-	  
-	  .btn,.form-control,.navbar-toggle{
-	  background-image:none;
-	  }
-	  .btn,.dropdown-menu>
-li>
-a,.ellipsis{
-	  white-space:nowrap
-	  }
-	  
-	  html{
-	  font-family:sans-serif;
-	  -ms-text-size-adjust:100%;
-	  -webkit-text-size-adjust:100%
-	  }
-	  
-	  a{
-	  background-color:transparent;
-	  color:#52a2b1;
-	  text-decoration:none
-	  }
-	  
-	  .form-control,body{
-	  background-color:#fff
-	  }
-	  
-	  h1{
-	  margin:.67em 0
-	  }
-	  
-	  img{
-	  border:0
-	  }
-	  
-	  button,input{
-	  color:inherit;
-	  font:inherit;
-	  margin:0
-	  }
-	  
-	  .btn,.h4,h1,h3{
-	  font-weight:400
-	  }
-	  
-	  button{
-	  overflow:visible;
-	  text-transform:none;
-	  -webkit-appearance:button
-	  }
-	  
-	  .modal,.sr-only{
-	  overflow:hidden
-	  }
-	  
-	  button::-moz-focus-inner,input::-moz-focus-inner{
-	  border:0;padding:0
-	  }
-	  
-	  *,:after,:before{
-	  -webkit-box-sizing:border-box;
-	  -moz-box-sizing:border-box;
-	  box-sizing:border-box
-	  }
-	  
-	  body{
-	margin:0;
-	font-family:Avenir-Roman, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size:16px;
-	line-height:1.8;
-	color:#343840
-	  }
-	  
-	  button,input{
-	  font-family:inherit;font-size:inherit;
-	  line-height:inherit
-	  }
-	  
-	  .btn,.btn.btn-lg{
-	  font-family:Avenir-Heavy,"Helvetica Neue",Helvetica,Arial,sans-serif
-	  }
-	  
-	  .img-circle{
-	  border-radius:50%
-	  }
-	  
-	  .sr-only{
-	  position:absolute;
-	  width:1px;
-	  height:1px;
-	  margin:-1px;
-	  padding:0;
-	  clip:rect(0,0,0,0);
-	  border:0
-	  }
-	  
-	  .h4,h1,h3{
-	  color:inherit
-	  }
-	  
-	  h1,h3{
-	  margin-top:28px
-	  }
-	  
-	  .h4{
-	  margin-top:14px
-	  }
-	  
-	  p{
-	  margin:0 0 14px
-	  }
-	  
-	  .container,.container-fluid{
-	margin-right:auto;
-	margin-left:auto;
-	padding-left:15px;
-	padding-right:15px;
-	  }
-	  
-	  ul{
-	  margin-top:0;
-	  margin-bottom:14px
-	  }
-	  
-	  .btn,ul ul{
-	  margin-bottom:0
-	  }
-	  
-	  @media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1100px}}
-	  
-	  .row{
-	  margin-left:-15px;
-	  margin-right:-15px
-	  }
-	  
-	  .col-md-10,.col-sm-3,.col-xs-12,.col-xs-6{
-	  position:relative;
-	  min-height:1px;
-	  padding-left:15px;
-	  padding-right:15px
-	  }
-	  
-	  .col-xs-12,.col-xs-6{
-	  float:left
-	  }
-	  
-	  .col-xs-12{
-	  width:100%
-	  }
-	  
-	  .col-xs-6{
-	  width:50%
-	  }
-	  
-	  @media (min-width:768px){.col-sm-3{float:left;width:25%}}@media (min-width:992px){.col-md-10{float:left;width:83.33333333%}}
-	  
-	  .form-control{
-	  width:100%;
-	  height:42px;
-	  padding:6px 12px;
-	  font-size:16px;
-	  line-height:1.8;
-	  color:#343840;
-	  border:1px solid #ced2da;
-	  border-radius:5px;
-	  -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
-	  box-shadow:inset 0 1px 1px rgba(0,0,0,.075)
-	  }
-	  
-	  .btn-lg,.input-lg{
-	  padding:10px 16px;
-	  font-size:18px;
-	  line-height:1.85
-	  }
-	  
-	  .form-control::-moz-placeholder{color:#ced2da;opacity:1}
-	  
-	  .form-control:-ms-input-placeholder{
-	  color:#ced2da
-	  }
-	  
-	  .form-control::-webkit-input-placeholder{color:#ced2da}
-	  
-	  .input-lg{
-	  height:56px;
-	  border-radius:5px
-	  }
-	  
-	  .btn{
-	  display:inline-block;
-	  text-align:center;
-	  touch-action:manipulation;
-	  border:1px solid transparent
-	  }
-	  
-	  .btn-primary{
-	  color:#fff;
-	  background-color:#e82953;
-	  border-color:#e82953
-	  }
-	  
-	  .btn-lg{
-	  border-radius:5px
-	  }
-	  
-	  .btn-block{
-	  display:block;
-	  width:100%
-	  }
-	  
-	  .fade{
-	  opacity:0
-	  }
-	  
-	  .collapse{
-	  display:none
-	  }
-	  
-	  .dropdown{
-	  position:relative
-	  }
-	  
-	  .dropdown-menu{
-	  position:absolute;
-	  top:100%;
-	  left:0;
-	  z-index:1000;
-	  display:none;
-	  float:left;
-	  padding:5px 0;
-	  list-style:none;
-	  font-size:16px;
-	  text-align:left;
-	  background-color:#fff;
-	  border-radius:5px;
-	  -webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);
-	  box-shadow:0 6px 12px rgba(0,0,0,.175)
-	  }
-	  
-	  .nav>
-	li,.nav>
-	li>
-	a,.navbar{
-	position:relative
-	}
-.dropdown-menu .divider{
-	height:1px;
-	margin:13px 0;
-	overflow:hidden;
-	background-color:#ced2da
-	}
-.dropdown-menu>
-	li>
-	a{
-	display:block;
-	padding:3px 20px;
-	clear:both;
-	font-weight:400;
-	line-height:1.8;
-	color:#6a707a
-	}
-
-	.dropdown-menu-right{
-	left:auto;
-	right:0
-	}
-.dropdown-menu-left{
-	left:0;
-	right:auto
-	}
-.nav{
-	margin-bottom:0;
-	padding-left:0;
-	list-style:none
-	}
-.nav>
-	li{
-	display:block
-	}
-.nav>
-	li>
-	a{
-	display:block;
-	padding:10px 13px
-	}
-.nav>
-	li>
-	a>
-	img{
-	max-width:none
-	}
-.navbar{
-	min-height:56px;
-	margin-bottom:28px;
-	border:1px solid transparent
-	}
-.navbar-collapse{
-	overflow-x:visible;
-	padding-right:15px;
-	padding-left:15px;
-	border-top:1px solid transparent;
-	box-shadow:inset 0 1px 0 rgba(255,255,255,.1);
-	-webkit-overflow-scrolling:touch
-	}
-.navbar-fixed-top .navbar-collapse{
-	max-height:100%
-	}
-.container-fluid>
-	.navbar-collapse,.container-fluid>
-	.navbar-header{
-	margin-right:-15px;
-	margin-left:-15px
-	}
-@media (min-width:768px){
-	.navbar-right .dropdown-menu{
-	left:auto;
-	right:0
-	}
-.navbar-right .dropdown-menu-left{
-	left:0;
-	right:auto
-	}
-.navbar{
-	border-radius:5px
-	}
-.navbar-header{
-	float:left
-	}
-.navbar-collapse{
-	width:auto;
-	border-top:0;
-	box-shadow:none
-	}
-.navbar-collapse.collapse{
-	display:block!important;
-	height:auto!important;
-	padding-bottom:0;
-	overflow:visible!important
-	}
-.navbar-fixed-top .navbar-collapse{
-	padding-left:0;
-	padding-right:0
-	}
-.container-fluid>
-	.navbar-collapse,.container-fluid>
-	.navbar-header{
-	margin-right:0;
-	margin-left:0
-	}
-.navbar-fixed-top{
-	border-radius:0
-	}
-
-	}
-.navbar-fixed-top{
-	position:fixed;
-	right:0;
-	left:0;
-	z-index:1030;
-	top:0;
-	border-width:0 0 1px
-	}
-.navbar-brand{
-	float:left;
-	padding:14px 15px;
-	font-size:18px;
-	line-height:28px;
-	height:56px
-	}
-.navbar-brand>
-	img{
-	display:block
-	}
-@media (min-width:768px){
-	.navbar>
-	.container-fluid .navbar-brand{
-	margin-left:-15px
-	}
-
-	}
-.navbar-toggle{
-	position:relative;
-	float:right;
-	padding:9px 10px;
-	background-color:transparent;
-	border:1px solid transparent;
-	border-radius:5px;
-	margin:11px 15px
-	}
-.navbar-default,.thumbnail{
-	background-color:#fff
-	}
-@media (max-width:320px){
-	.navbar-toggle{
-	margin-right:0;
-	margin-left:10px
-	}
-
-	}
-.navbar-toggle .icon-bar{
-	display:block;
-	width:22px;
-	height:2px;
-	border-radius:1px
-	}
-.navbar-toggle .icon-bar+.icon-bar{
-	margin-top:4px
-	}
-.navbar-nav{
-	margin:7px -15px
-	}
-.navbar-nav>
-	li>
-	a{
-	padding-top:10px;
-	padding-bottom:10px;
-	line-height:28px;
-	position: relative;
-	right: auto;
-	}
-.navbar-nav>
-	li>
-	.dropdown-menu{
-	margin-top:0;
-	border-top-right-radius:0;
-	border-top-left-radius:0
-	}
-@media (min-width:768px){
-	.navbar-toggle{
-	display:none
-	}
-.navbar-nav{
-	float:left;
-	margin:0
-	}
-.navbar-nav>
-	li{
-	float:left
-	}
-.navbar-nav>
-	li>
-	a{
-	padding-top:14px;
-	padding-bottom:14px
-	}
-.navbar-right{
-	float:right!important;
-	margin-right:-15px
-	}
-.navbar-right~.navbar-right{
-	margin-right:0
-	}
-
-	}
-.navbar-default .navbar-brand,.navbar-default .navbar-nav>
-	li>
-	a{
-	color:#343840
-	}
-.navbar-default .navbar-collapse{
-	border-color:#eee
-	}
-.thumbnail{
-	display:block;
-	padding:4px;
-	margin-bottom:28px;
-	line-height:1.8;
-	border:1px solid #ddd;
-	border-radius:5px
-	}
-.modal{
-	display:none;
-	position:fixed;
-	top:0;
-	right:0;
-	bottom:0;
-	left:0;
-	z-index:8060;
-	-webkit-overflow-scrolling:touch;
-	outline:0
-	}
-.container-fluid:after,.container-fluid:before,.container:after,.container:before,.nav:after,.nav:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before,.row:after,.row:before{
-	content:" ";
-	display:table
-	}
-.hide,.visible-xs{
-	display:none!important
-	}
-.container-fluid:after,.container:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.row:after{
-	clear:both
-	}
-.pull-right{
-	float:right!important
-	}
-.pull-left{
-	float:left!important
-	}
-@-ms-viewport{
-	width:device-width
-	}
-@media (max-width:767px){
-	.visible-xs{
-	display:block!important
-	}
-.hidden-xs{
-	display:none!important
-	}
-
-	}
-.navbar-default .navbar-toggle{
-	border:none;
-	background-color:transparent
-	}
-.navbar-default .navbar-toggle .icon-bar{
-	background-color:#343840;
-	height:3px
-	}
-.navbar-default{
-	border-color:#dde0e6
-	}
-#modal-container{
-	background-color:rgba(255,255,255,.8)
-	}
-@media (min-width:480px){
-	#modal-container{
-	padding-right:15px;
-	padding-left:15px
-	}
-
-	}
-@media (max-width:480px){
-	#modal-container{
-	padding-right:0;
-	padding-left:0
-	}
-
-	}
-.btn{
-	line-height:24px;
-	padding:8px 16px;
-	border-radius:5px;
-	border-width:1px
-	}
-.btn.btn-lg{
-	font-size:18px;
-	line-height:22px;
-	padding:16px 32px
-	}
-.btn.dropdown-btn{
-	font-family:Avenir-Roman,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size:16px
-	}
-@font-face{
-	font-family:Avenir-Roman;
-	font-display:swap;
-	src:url();
-	src:url() format("eot"),url() format("woff2"),url() format("woff"),url() format("truetype"),url() format("svg")
-	}
-@font-face{
-	font-family:Avenir-Heavy;
-	font-display:swap;
-	src:url();
-	src:url() format("eot"),url() format("woff2"),url() format("woff"),url() format("truetype"),url() format("svg")
-	}
-@font-face{
-	font-family:Avenir-Black;
-	font-display:swap;
-	src:url();
-	src:url() format("eot"),url() format("woff2"),url() format("woff"),url() format("truetype"),url() format("svg")
-	}
-@font-face{
-	font-family:YOURCOMPANY-icons;
-	font-display:block;
-	src:url();
-	src:url() format('embedded-opentype'),url() format('woff'),url() format('truetype'),url() format('svg');
-	font-weight:400;
-	font-style:normal
-	}
-[class*=" icon-"],[class^=icon-]{
-	display:inline-block;
-	font:normal normal normal 14px/1 YOURCOMPANY-icons;
-	font-size:inherit;
-	text-rendering:auto;
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
-	transform:translate(0,0)
-	}
-.h4,.heavy,h1,h3{
-	font-family:Avenir-Heavy,"Helvetica Neue",Helvetica,Arial,sans-serif
-	}
-.icon-arrow-nav:before{
-	content:"k"
-	}
-.icon-search:before{
-	content:"'"
-	}
-.margin-xl-bottom{
-	margin-bottom:24px
-	}
-.arrow-up{
-	width:0;
-	height:0;
-	border-left:6px solid transparent;
-	border-right:6px solid transparent;
-	border-bottom:6px solid #fff
-	}
-html{
-	font-size:100%
-	}
-h1{
-	font-size:40px;
-	line-height:48px;
-	margin-bottom:32px
-	}
-h3{
-	font-size:28px;
-	line-height:32px;
-	margin-bottom:40px
-	}
-.h4{
-	font-size:24px;
-	line-height:28px;
-	margin-bottom:16px
-	}
-.form-standard{
-	width:100%
-	}
-input{
-	border:1px solid #dde0e6;
-	border-radius:0
-	}
-.btn{
-	font-size:16px
-	}
-.text-small{
-	font-size:14px;
-	line-height:21px
-	}
-.text-base{
-	color:#4b4b4b;
-	font-size:16px
-	}
-.ico{
-	vertical-align:-15%;
-	line-height:.75em
-	}
-.ico-sm{
-	font-size:.75em
-	}
-.hover-wrapper{
-	position:absolute;
-	top:0;
-	bottom:38%;
-	right:0;
-	left:0;
-	z-index:2
-	}
-p{
-	margin-bottom:8px
-	}
-.flex{
-	display:flex
-	}
-.flex.column{
-	flex-direction:column
-	}
-.flex.center{
-	justify-content:center
-	}
-.flex.end{
-	justify-content:flex-end
-	}
-.flex.space-between{
-	justify-content:space-between
-	}
-.flex.bottom{
-	align-items:flex-end
-	}
-body,html{
-	height:100%
-	}
-.wrap{
-	min-height:100%;
-	height:auto;
-	margin:0 auto -206px;
-	padding:60px 0 206px
-	}
-footer .footer-content .copyright{
-	font-size:14px;
-	color:#ced2da;
-	margin-top:9px
-	}
-footer .footer-content .copyright a{
-	color:#ced2da
-	}
-.HeroCarousel{
-	position:relative;
-	height:440px;
-	background-color:#f8f9fa;
-	color:#000
-	}
-@media (min-width:768px){
-	.wrap{
-	padding:0 0 206px
-	}
-.HeroCarousel{
-	min-height:640px;
-	height:70vh
-	}
-
-	}
-.HeroCarousel .img-container{
-	position:absolute;
-	top:0;
-	bottom:0;
-	left:0;
-	right:0;
-	background-size:cover;
-	background-position:center;
-	height:45%
-	}
-@media (min-width:768px){
-	.HeroCarousel .img-container{
-	height:auto
-	}
-.HeroCarousel .hero-search-container h3{
-	font-size:60px;
-	line-height:60px
-	}
-
-	}
-.HeroCarousel .hero-search-container{
-	z-index:2;
-	height:100%
-	}
-.HeroCarousel .hero-search-container h3{
-	font-family:Avenir-Black,"Helvetica Neue",Helvetica,Arial,sans-serif
-	}
-@media (max-width:767px){
-	.HeroCarousel .hero-search-container{
-	margin-top:30px;
-	min-width:100%
-	}
-.HeroCarousel .hero-search-container h3{
-	margin-top:64px;
-	margin-bottom:64px
-	}
-.HeroCarousel .SearchModule>
-	.row .SearchSubmitBtn{
-	width:100%
-	}
-
-	}
-.HeroCarousel .imageDetails{
-	max-width:256px;
-	padding:12px 16px;
-	margin-right:16px;
-	margin-bottom:20px;
-	position:relative;
-	z-index:1
-	}
-.HeroCarousel .imageDetails::before{
-	background-color:#212429;
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
-	border-radius:5px;
-	content:"";
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	opacity:.4;
-	z-index:-1
-	}
-.HeroCarousel .imageDetails div{
-	white-space:nowrap;
-	overflow:hidden;
-	text-overflow:ellipsis
-	}
-.HeroCarousel .SearchModule>
-	.row>
-	.form-btn-container,.HeroCarousel .SearchModule>
-	.row>
-	.form-inputs{
-	margin-bottom:8px
-	}
-.HeroCarousel .SearchModule>
-	.row>
-	.form-btn-container .SearchSubmitBtn,.HeroCarousel .SearchModule>
-	.row>
-	.form-inputs .search-date-dropdown,.HeroCarousel .SearchModule>
-	.row>
-	.form-inputs input{
-	box-shadow:4px 2px 4px rgba(0,0,0,.2)
-	}
-.HeroCarousel .SearchModule>
-	.row .DateTimeBtn.button-control.btn-lg{
-	padding-left:16px;
-	padding-right:16px;
-	font-size:18px;
-	height:unset
-	}
-@media (min-width:768px){
-	.HeroCarousel .SearchModule>
-	.row>
-	.form-btn-container,.HeroCarousel .SearchModule>
-	.row>
-	.form-inputs{
-	width:26%;
-	display:inline-block;
-	vertical-align:middle;
-	margin-bottom:0
-	}
-.HeroCarousel .SearchModule>
-	.row .ActivityInput{
-	border-right:0;
-	border-top-right-radius:0;
-	border-bottom-right-radius:0
-	}
-.HeroCarousel .SearchModule>
-	.row .LocationInput{
-	border-radius:0
-	}
-.HeroCarousel .SearchModule>
-	.row .DateTimeBtn{
-	border-left:0;
-	border-top-left-radius:0;
-	border-bottom-left-radius:0
-	}
-.HeroCarousel .SearchModule>
-	.row>
-	.form-btn-container{
-	margin-left:8px;
-	width:20%
-	}
-
-	
-	}
-
-	.ActivitySection{
-	margin-top:48px
-	}
-
-	.ActivitySection .thumbnail-container,.ActivitySection .thumbnail-container .thumbnail-col{
-	padding-left:8px;
-	padding-right:8px
-	}
-
-	.ActivitySection .thumbnail-container .thumbnail{
-	padding:0;
-	margin-bottom:16px;
-	position:relative;
-	background-color:#e9ebef;
-	border:none;
-	border-radius:5px
-	}
-
-	.ActivitySection .thumbnail-container .thumbnail.marketing .img-container{
-	padding-bottom:100%;
-	border-radius:5px
-	}
-
-	.Testimonial .quote .author-avatar{
-	display:none
-	}
-
-	@media (max-width:767px){
-	.Testimonial .quote .author-avatar{
-	display:block;
-	width:36px;
-	height:36px;
-	margin-right:16px;
-	margin-top:4px;
-	-webkit-border-radius:50%;
-	-moz-border-radius:50%;
-	border-radius:50%
-	}
-
-	
-	}
-
-	.thumbnail .img-container{
-	width:100%;
-	position:relative;
-	overflow:hidden
-	}
-
-	.thumbnail .img-container img{
-	width:100%;
-	position:absolute;
-	top:0;
-	bottom:0;
-	left:0;
-	right:0;
-	color:#fff;
-	text-align:center
-	}
-
-	.marketing.thumbnail .img-container{
-	padding-bottom:75%
-	}
-
-	.navbar{
-	color:#343840
-	}
-
-	.navbar .icon-search{
-	padding-right:10px
-	}
-
-	.navbar .img-circle{
-	width:30px;
-	margin-left:5px;
-	margin-right:5px;
-	border:2px solid #52a2b1
-	}
-
-	.navbar .dropdown-menu li{
-	padding-top:5px;
-	padding-bottom:5px
-	}
-
-	.navbar .container-fluid{
-	padding-left:14px;
-	padding-right:20px
-	}
-
-	.navbar .navbar-brand{
-	padding:1px 10px;
-	font-size:16px
-	}
-
-	.navbar .navbar-brand img{
-	height:100%;
-	width:auto;
-	margin-top:3px;
-	margin-right:10px;
-	padding:8px 0;
-	margin-left:5px
-	}
-
-	@media (max-width:320px){
-	.navbar .navbar-brand img{
-	height:87%;
-	margin-top:7px
-	}
-
-	
-	}
-
-	.navbar .navbar-brand img.brand-logo-white{
-	display:none
-	}
-
-	.navbar .navbar-brand img.brand-logo-dark{
-	display:inline-block
-	}
-
-	.navbar .nav-signup li{
-	float:left;
-	color:#46bc93
-	}
-
-	.navbar .navbar-nav li .add-a-space{
-	padding-left:2px;
-	padding-right:2px;
-	color:#52a2b1
-	}
-
-	.navbar .navbar-nav li .add-a-space span{
-	padding:9px 20px
-	}
-
-	.navbar .navbar-nav li .vertical-line{
-	height:20px;
-	width:1px;
-	background-color:#ced2da;
-	display:none;
-	margin-top:12px
-	}
-
-	@media (min-width:411px) and (max-width:767px){
-	.navbar .navbar-nav li .vertical-line{
-	display:inline-block
-	}
-
-	
-	}
-
-	.navbar .navbar-nav li .search{
-	color:#e82953
-	}
-
-	.navbar .navbar-nav li .sign-up{
-	color:#52a2b1;
-	display:none
-	}
-
-	@media (min-width:768px){
-	.navbar li .learn-more{
-	padding-top:9px;
-	margin-top:7px
-	}
-
-	
-	}
-
-	.logged-in.navbar-toggle{
-	padding:13px 10px;
-	margin:0
-	}
-
-	.navbar-toggle img{
-	width:30px
-	}
-
-	@media (min-width:411px) and (max-width:767px){
-	.navbar .navbar-nav li .sign-up{
-	display:inline-block
-	}
-
-	#header_link_signup{
-	display:none
-	}
-
-	
-	}
-
-	.navbar-default .menu-bookings,.navbar-default .menu-listings,.navbar-default .menu-messages{
-	border-left:1px solid #dde0e6
-	}
-
-	.dropdown-menu{
-	margin:0;
-	border:none;
-	min-width:125.4px;
-	background-clip:border-box
-	}
-
-	.navbar-default .profile-dropdown{
-	border-left:1px solid #dde0e6
-	}
-
-	.navbar-default .profile-menu-dropdown{
-	border-top:1px solid #dde0e6;
-	margin-right:-15px
-	}
-
-	.profile-dropdown .profile-menu{
-	padding-top:13px;
-	padding-bottom:13px
-	}
-
-	@media (max-width:767px){
-	.profile-dropdown .profile-menu{
-	display:none
-	}
-
-	.dropdown-container{
-	font-size:16px
-	}
-
-	
-	}
-
-	.profile-dropdown>
-	.profile-menu-dropdown{
-	width:200px;
-	padding-top:20px;
-	padding-bottom:15px
-	}
-
-	@media only screen and (max-width:767px){
-	.profile-dropdown>
-	.profile-menu-dropdown{
-	display:block;
-	position:static;
-	float:none;
-	width:auto;
-	margin-top:0;
-	margin-right:0;
-	background-color:transparent;
-	border:0;
-	box-shadow:none;
-	padding-top:0
-	}
-
-	
-	}
-
-	
-		  .profile-menu-dropdown .arrow-up{
-		  position:absolute;
-		  top:-7px;
-		  right:10px;
-		  left:auto
-		  }
-
-		  .profile-menu-dropdown>
-	li>
-	a{
-	  padding-right:25px;
-	  padding-left:25px;
-	  color:#343840
-	  }
-	  .profile-dropdown .add-a-space-menu{
-	  color:#52a2b1
-	  }
-	  .dropdown-menu li.divider{
-	  padding-bottom:0;
-	  padding-top:0
-	  }
-	  .ellipsis{
-	  overflow:hidden;
-	  text-overflow:ellipsis
-	  }
-	  button{
-	  background:0 0
-	  }
-	  .button-control{
-	  width:100%;
-	  background-color:#fff;
-	  height:42px;
-	  font-size:16px;
-	  line-height:1.5;
-	  color:#343840;
-	  display:block;
-	  padding:1px 12px
-	  }
-	  .dropdown-container{
-	  position:relative
-	  }
-	  .dropdown-container .dropdown-btn{
-	  background-color:#fff;
-	  border-color:#ced2da;
-	  text-align:left
-	  }   
-
-	  #A151 {
-	background-color: #8C9F98;
-	border-radius:2%;
-	
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style media="screen">
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:black;
+  background-image:url('');
+  background-attachment:fixed;
 }
-  footer {
-	background-color: #CAD2CF;
-}
-  .A1 {
-	background-color: #D0D9D2;
-}
-  .img-container {
-	background-color: #E2E2E2;
-}
-  .img-container1 {	background-color: #E2E2E2;
-}
-  #A189 {
-	float: left;
-	position: relative;
-}
-  #A200 {
-	clear: left;
-	float: right;
-	position: relative;
-}
-  .A211 {
-	clear: right;
-	float: left;
-	position: relative;
-}
-  #A222 {
-	clear: left;
-	float: right;
-	position: relative;
-}
-  </style>
 
-  <!-- script tage removed -->
+.topnav {
+  z-index:100;
+  position:fixed;
+  overflow: hidden;
+  background-color: #e9e9e9;
+  width:100%;
+  top:-42px;
+  transition:2s;
+}
 
-  <!-- link tag removed -->
+.topnav:hover{
+  top:0%;
+}
 
-  <!-- no script tag removed -->
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+.mySlides {
+display: none;
+}
+
+img {
+vertical-align: middle;
+}
+
+/* Slideshow  */
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.cont{
+  position:absolute;
+  top:90%;
+  width:100%;
+
+}
+
+.header-cont{
+  width:100%;
+  min-height:95%;
+}
+
+.body-cont{
+  position:absolute;
+  background-color:white;
+  width:100%;
+  min-height:40%;
+  
+  
+}
+
+#content{
+  position:relative;
+  background-color:white;
+  width:100%;
+  min-height:20%;
+  top:150px;
+
+
+}
+
+/* content stuff */
+
+</style>
 </head>
-
-  <body>
-
-    <div class="wrap">
-
-      <div id="nav-container">
-
-	  <div data-reactroot="" id="1" data-react-checksum="873363444"></div>
-      </div>
-      <span itemscope="" itemtype="http://schema.org/Organization" id="5">
-
-	  <link itemprop="url" href="http://www.YOURCOMPANY.com" id="6"/>
-
-	  <meta itemprop="sameAs" content="http://www.facebook.com/YOURCOMPANY" id="7"/>
-
-	  <meta itemprop="sameAs" content="http://www.twitter.com/YOURCOMPANY" id="8"/>
-
-	  <meta itemprop="sameAs" content="http://www.pinterest.com/YOURCOMPANY" id="9"/>
-
-	  <meta itemprop="sameAs" content="https://www.youtube.com/user/YOURCOMPANY" id="10"/>
-
-	  <meta itemprop="sameAs" content="https://www.linkedin.com/company/#" id="11"/>
-
-	  <meta itemprop="logo" content="http://res.cloudinary.com/YOURCOMPANY-inc/image/upload/v1415919909/ps_images/peer_space_logo.png" id="12"/>
-
-	  </span>
-
-	  <div class="container-fluid" id="13">
-
-	  <div class="navbar-header" id="14">
-
-	  <div class="nav-logged-out " id="15">
-
-	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#listing-navbar" aria-expanded="false" id="16">
-
-	  <span class="sr-only" id="17">
-Toggle navigation</span>
-
-	  <span class="icon-bar" id="18">
-
-	  </span>
-
-	  <span class="icon-bar" id="19">
-
-	  </span>
-
-	  <span class="icon-bar" id="20">
-
-	  </span>
-
-	  </button>
-
-	  </div>
-
-	  <div class="nav-logged-in hide" id="21">
-
-	  
-	  <button type="button" class="logged-in navbar-toggle" data-toggle="collapse" data-target="#listing-navbar" aria-expanded="false" id="22">
-
-		<span class="sr-only" id="23">
-Toggle navigation</span>
-
-	  
-		<img class="img-circle" src="" id="24"/>
-
-	  
-		<i class="ico ico-sm icon-arrow-nav" id="25">
-</i>
-
-	  </button>
-
-	  
-	  </div>
-	  <ul class="nav navbar-nav nav-signup pull-right" id="29">
-	    
-	    
-	    <li id="30">
-
-<a id="header_link_search" class="search pull-left" href="#a=search" >
-
-<i class="ico icon-search" id="32">
-</i>
-<!-- react-text: 33 -->
-Search<!-- /react-text -->
-
-</a>
+<body>
 
 
-		</li>
 
-			
-		<li class="nav-logged-out " id="34">
-
-			<div class="vertical-line " id="35">
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
 </div>
 
-		</li>
 
-		<li class="nav-logged-out " id="36">
 
-			<a class="sign-up undefined" href="#a=signup&amp;source=nav" rel="nofollow" id="37">
-Sign Up</a>
+<div class="cont">
+<div class="header-cont">
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-		</li>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img1.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
 
-	  </ul>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img2.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
 
-	  </div>
-	  <ul class="nav navbar-nav navbar-right nav-logged-in hide" id="39">
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img3.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
 
-      <li class="menu-messages hidden-sm hidden-xs" id="40">
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
 
-      <a href="/inbox" rel="nofollow" id="41">
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
 
-      Inbox
-      </a>
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-      </li>
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 20000); // Change image every 2 seconds
+}
+</script>
+</div>
 
-      <li class="menu-bookings hidden-sm hidden-xs" id="43">
+<div class="body-cont">
+<h1>
+Body
+</h1>
 
-      <a href="/bookings" rel="nofollow" id="44">
-Bookings</a>
+</div>
 
-      </li>
-
-      <li class="menu-listings hidden-sm hidden-xs" id="45">
-
-      <a href="/boards" rel="nofollow" id="46">
-Boards</a>
-
-      </li>
-
-      <li id="profileDropdown" class="dropdown profile-dropdown" id="47">
-
-      <a href="#" class="dropdown-toggle profile-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="48">
-
-      <img class="img-circle" src="/web-templates/assets/images/no_avatar_placeholder.svg" id="49"/>
-
-      <i class="ico ico-sm icon-arrow-nav" id="50">
-</i>
-</a>
-
-      <ul class="dropdown-menu dropdown-menu-right profile-menu-dropdown" id="51">
-
-      <div class="arrow-up" id="52">
-
-      </div>
-
-      <li class="visible-sm visible-xs" id="53">
-
-      <a href="/inbox" rel="nofollow" id="54">
-
-      Inbox
-      </a>
-
-      </li>
-
-      <li class="visible-sm visible-xs" id="56">
-
-      <a href="/bookings" rel="nofollow" id="57">
-Bookings</a>
-
-      </li>
-
-      <li id="58">
-
-      <a href="/app/ps#s=reviews" rel="nofollow" id="59">
-Reviews</a>
-
-      </li>
-
-      <li class="visible-sm visible-xs" id="60">
-
-      <a href="/boards" rel="nofollow" id="61">
-Boards</a>
-
-      </li>
-
-      <li id="62">
-
-      <a href="/app/ps#s=profile" rel="nofollow" id="63">
-Profile</a>
-
-      </li>
-
-      <li id="64">
-
-      <a href="/app/ps#s=details" rel="nofollow" id="65">
-Details</a>
-
-      </li>
-
-      <li id="66">
-
-      <a href="/account" rel="nofollow" id="67">
-Payments</a>
-
-      </li>
-
-      <li role="separator" class="divider" id="68">
-
-      </li>
-
-      <li id="69">
-<a class="add-a-space-menu" href="/host" id="70">
-List Your Space</a>
-
-      </li>
-
-      <li id="71">
-<a class="logout" id="72">
-Log Out</a>
-
-      </li>
-
-      </ul>
-
-      </li>
-
-      </ul>
-
-      
-      <ul class="nav navbar-nav navbar-right nav-logged-out " id="73">
-<li class="dropdown" id="74">
-
-      <a href="#" class="dropdown-toggle learn-more" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="75">
-
-     	Activities 
-     
-
-      </a>
-
-      
+<div id="content">
+<h1>
+content
+</h1>
       <ul class="dropdown-menu dropdown-menu-left" id="78">
 
       <li id="79">
@@ -1516,872 +406,16 @@ See all activities</a>
 
       </li>
 </ul>
-</li>
-
-      <li id="105"><span id="107">
-<a href="" class="nav">List Your Space</a></span></li>
-
-      <li id="108">
-<a href="" class="nav">
- Sign Up
-</a>
-      </li>
-<li id="110">
- <a href="" class="nav">Log In
-</a>a
-      </li>
-</ul>
-</div>
-</div>
-  <div id="homepage">
-      
-<div class="Homepage" data-reactroot="" id="1" data-react-checksum="-2029083848"></div>
-
-      <div class="HeroCarousel flex column space-between" id="3">
-<div class="container hero-search-container flex column center" id="4">
-<h3 id="5">
-<!-- react-text: 6 -->
-Your next <!-- /react-text -->
-<span class="TextAnimation" id="7">
-<span id="8">
-<span id="9">
-video shoot</span>
-</span>
-</span>
-<br id="10"/>
-<!-- react-text: 11 -->
-starts here<!-- /react-text -->
-</h3>
-<div class="covid-health-safety-link row margin-sm-bottom" id="12">
-<span class="col-xs-1" id="13">
-<img class="hidden-xs" src="/web-templates/assets/images/spray-bottle-white.svg" id="14"/>
-<img class="hidden-sm hidden-md hidden-lg hidden-xl" src="" id="15"/>
-</span>
-<span class="col-xs-11 gutter-left-xs" id="16">
-
-Learn about our 
-<a href="" target="_blank" rel="noopener noreferrer" class="heavy" id="18">
-<!-- react-text: 19 -->
-COVID-19 Health &amp; Safety Measures <!-- /react-text -->
-<i class="ico ico-sm icon-arrow-nav" id="20">
-</i>
-</a>
-</span>
-</div>
-<div class="form-standard" id="21">
-<form id="hero-home-search-module" name="hero-home-search-module" class="SearchModule col-md-10" id="22"/>
 
 
-<div class="row" id="23">
-<div class="col-xs-12" id="24">
-</div>
-<div class="form-inputs" id="25">
-<div class="" id="26">
-<div id="27">
-<div id="28">
-<div style="position:relative;" class="input-feedback" id="29">
-<div class="dropdown-container text-base" id="30">
-<input type="text" aria-haspopup="true" tabindex="0" class="form-control normalize-inputs ActivityInput input-lg placeholder-color-change" value="" data-value="" autocomplete="off" id="search-activity-input" placeholder="What are you planning?" id="31"/>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="form-inputs" id="34">
-<div class="" id="35">
-<div id="36">
-<div id="37">
-<div style="position:relative;" class="input-feedback" id="38">
-<div class="dropdown-container text-base" id="39">
-<input type="text" aria-haspopup="true" tabindex="0" class="form-control normalize-inputs LocationInput input-lg placeholder-color-change" value="" autocomplete="off" id="search-location-input" placeholder="Where?" id="40"/>
-<!-- react-empty: 41 -->
-</div>
-</div>
-</div>
-<!-- react-empty: 42 -->
-</div>
-</div>
-</div>
-<div class="form-inputs" id="43">
-<div class="" id="44">
-<div id="45">
-<div style="position:relative;" class="input-feedback" id="46">
-<div class="dropdown-container " id="47">
-  <div class="ellipsis" id="49">
-    When?</div>
-<!-- react-empty: 50 -->
-</div>
-</div>
-<input type="hidden" readonly="" value="" id="51"/>
-</div>
-</div>
-</div>
-<div class="container-fluid form-btn-container" id="52">
-<div class="row" id="53">
-<div class="form-btn-col" id="54">
-<button class="btn btn-primary btn-lg SearchSubmitBtn" data-testing-id="home-hero-search" id="55">
-Search</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="text-small flex end bottom hidden-xs" id="56">
-<div class="imageDetails column" id="57">
-<div class="heavy" id="58">
-Short description of background</div>
-<div id="59">
-city name</div>
-</div>
-</div>
-<div class="img-container" style="background-image:url();" id="60"></div>
-</div>
-<div class="container covid-banner-container" id="61">
-<div class="CovidHealthAndSafetyBanner flex" id="62">
-<div class="margin-lg-bottom no-gutter col-xs-12" id="63">
-
-            <div class="margin-xl-top margin-xl-bottom flex column-sm-reverse col-xs-9" id="64">
-<span class="h3" id="65">
-Our COVID-19 Health &amp; Safety Measures</span>
-<span class="flex middle" id="66">
-
-            <div class="new-label text-xs heavy" id="67">
-New</div>
-</span>
-</div>
-<div class="col-xs-9 col-md-8" id="68">
-<p class="margin-xl-bottom" id="69">
-We’ve provided guidelines and enhanced safety measures for hosts so guests can book with peace of mind.</p>
-<a href="https://book.YOURCOMPANY.com/covid-19/overview" target="_blank" rel="noopener noreferrer" class="btn btn-default heavy" id="70">
-Learn more</a>
-</div>
-</div>
-</div>
-</div>
-<div class="ActivitySection container" id="71">
-<h1 class="h4" id="72">
-Book a unique space for your activity</h1>
-<div class="row thumbnail-container" id="73">
-<div class="col-xs-6 col-sm-3 thumbnail-col" id="74">
-<a href="/plan/film-shoot" id="75">
-<div class="thumbnail marketing" data-activity="Video shoot" id="76">
-<div class="hover-wrapper" id="77">
-</div>
-<div class="img-container" id="78">
-<img src="" id="79"/>
-</div>
-<div class="caption" id="80">
-<h4 class="title ellipsis text-center activity-header block-xs-center" id="81">
-Video shoot</h4>
-</div>
-</div>
-</a>
-</div>
-<div class="col-xs-6 col-sm-3 thumbnail-col" id="82">
-<a href="/plan/photo-shoot" id="83">
-<div class="thumbnail marketing" data-activity="Photo shoot" id="84">
-<div class="hover-wrapper" id="85">
-</div>
-<div class="img-container" id="86">
-<img src="" id="87"/>
-</div>
-<div class="caption" id="88">
-<h4 class="title ellipsis text-center activity-header block-xs-center" id="89">
-Photo shoot</h4>
-</div>
-</div>
-</a>
-</div>
-<div class="col-xs-6 col-sm-3 thumbnail-col" id="90">
-<a href="/plan/meeting" id="91">
-<div class="thumbnail marketing" data-activity="Meeting" id="92">
-<div class="hover-wrapper" id="93">
-</div>
-<div class="img-container" id="94">
-<img src="" id="95"/>
-</div>
-<div class="caption" id="96">
-<h4 class="title ellipsis text-center activity-header block-xs-center" id="97">
-Meeting</h4>
-</div>
-</div>
-</a>
-</div>
-<div class="col-xs-6 col-sm-3 thumbnail-col" id="98">
-<a href="/plan/party" id="99">
-<div class="thumbnail marketing" data-activity="Party" id="100">
-<div class="hover-wrapper" id="101">
-</div>
-<div class="img-container" id="102">
-<img src="" id="103"/>
-</div>
-<div class="caption" id="104">
-<h4 class="title ellipsis text-center activity-header block-xs-center" id="105">
-Party</h4>
-</div>
-</div>
-</a>
-</div>
-<div class="col-xs-6 col-sm-3 thumbnail-col" id="106">
-<a href="/plan/workshop" id="107">
-<div class="thumbnail marketing" data-activity="Workshop" id="108">
-<div class="hover-wrapper" id="109">
-</div>
-<div class="img-container" id="110">
-<img src="" id="111"/>
-</div>
-<div class="caption" id="112">
-<h4 class="title ellipsis text-center activity-header block-xs-center" id="113">
-Workshop</h4>
-</div>
-</div>
-</a>
-</div>
-<div class="col-xs-6 col-sm-3 thumbnail-col" id="114">
-<a href="/plan/baby-shower" id="115">
-<div class="thumbnail marketing" data-activity="Baby shower" id="116">
-<div class="hover-wrapper" id="117">
-</div>
-<div class="img-container" id="118">
-<img src="" id="119"/>
-</div>
-<div class="caption" id="120">
-<h4 class="title ellipsis text-center activity-header block-xs-center" id="121">
-Baby shower</h4>
-</div>
-</div>
-</a>
-</div>
-<div class="col-xs-6 col-sm-3 thumbnail-col" id="122">
-<a href="/plan/pop-up" id="123">
-<div class="thumbnail marketing" data-activity="Pop-up" id="124">
-<div class="hover-wrapper" id="125">
-</div>
-<div class="img-container" id="126">
-<img src="" id="127"/>
-</div>
-<div class="caption" id="128">
-<h4 class="title ellipsis text-center activity-header block-xs-center" id="129">
-Pop-up</h4>
-</div>
-</div>
-</a>
-</div>
-<div class="col-xs-6 col-sm-3 thumbnail-col" id="130">
-<a href="/plan/performance" id="131">
-<div class="thumbnail marketing" data-activity="Performance" id="132">
-<div class="hover-wrapper" id="133">
-</div>
-<div class="img-container" id="134">
-<img src="" id="135"/>
-</div>
-<div class="caption" id="136">
-<h4 class="title ellipsis text-center activity-header block-xs-center" id="137">
-Performance</h4>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="row" id="138">
-<div class="col-xs-12" id="139">
-<a href="https://www.YOURCOMPANY.com/plan/activities" id="140">
-
-View all activities
-
-</a>
-</div>
-</div>
-</div>
-<div class="WhyYOURCOMPANY" id="143">
-<div class="container-fluid no-gutter" id="144">
-<div class="column-container" id="145">
-<div class="flex-basis-50 img-col" id="146">
-<div class="text-small hidden-xs text-white imageDetailsContainer" id="147">
-<div class="imageDetails column" id="148">
-<div class="heavy" id="149">
-Music video shoot in New York City</div>
-</div>
-</div>
-<img src="" id="150"/>
-</div>
-<div class="flex-basis-50 container-fluid content-col" id="A151">
-<div class="row" id="152">
-<div class="col-md-9 col-lg-7" id="153">
-<h4 class="section-spacing" id="154">
-Why &lt;YOURCOMPANY&gt;?</h4>
-<div class="section-container" id="155">
-
-<div class="section-spacing" id="156">
-<h6 id="157">
-Unique spaces</h6>
-<p id="158">
-Every day we uncover new, creative spaces - from neighborhood galleries to hidden rooftops and beyond.</p>
-</div>
-<div class="section-spacing" id="159">
-<h6 id="160">
-Honest pricing</h6>
-<p id="161">
-Our spaces are priced to fit your budget. Pay by the hour without worrying about hidden fees.</p>
-</div>
-<div class="section-spacing" id="162">
-<h6 id="163">
-Smooth bookings</h6>
-<p id="164">
-No more messy contracts. We build the tools to make booking a space as easy as the click of a button.</p>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 
-<div class="citySection carouselSections container" id="165">
-<div class="row" id="166">
-<div class="col-xs-12" id="167">
-<h4 id="168">
-We&#x27;ve unlocked spaces nationwide</h4>
-</div>
-</div>
-<div class="flex carousel-row" itemprop="itemListElement" itemtype="http://schema.org/ListItem" id="169">
-<div class="featured-col img-rounded" id="170">
-<meta content="San Diego" itemprop="name" id="171"/>
-<meta content="1" itemprop="position" id="172"/>
-<meta content="https://www.YOURCOMPANY.com/venues/san-diego--ca" itemprop="url" id="173"/>
-<a href="https://www.YOURCOMPANY.com/venues/san-diego--ca" id="174">
-<div class="caption" id="175">
-<div class="text-xs heavy" id="176">
-FEATURED</div>
-<h3 class="no-margin" id="177">
-San Diego</h3>
-<div class="text-large" id="178">
-Explore spaces in San Diego</div>
-</div></a><a href="/plan/performance" id="1312"><span class="img-container1"><img src="" alt="san deigo" width="235" height="93" id="1352"/></span></a> </div>
-<div class="carousel-col" id="180">
-<div class="slick-slider slick-initialized" dir="ltr" id="181">
 
-<div class="slick-list" id="185">
-<div class="slick-track" style="width:233.33333333333334%;left:0%;" id="186">
-<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline:none;width:14.285714285714286%;" id="187">
-<div id="188">
-<div class="col-xs-12 no-gutter" tabindex="-1" style="width:100%; display:inline-block; position: relative;" id="A189">
-<meta content="Dallas" itemprop="name" id="190"/>
-<meta content="3" itemprop="position" id="191"/>
-<meta content="https://www.YOURCOMPANY.com/venues/dallas--tx" itemprop="url" id="192"/>
-<a href="https://www.YOURCOMPANY.com/venues/dallas--tx" id="193">
-<div class="carousel" id="194">
-<div class="caption" id="195">
-<div class="text-xs heavy" id="196">
-NEW!</div>
-<h4 class="no-margin" id="197">
-Dallas</h4>
-</div>
-<span class="img-container1"><img src="" alt="san deigo" width="235" height="93" id="13522"/></span></div>
-</a>
-</div>
-</div>
-<div id="199">
-<div class="col-xs-12 no-gutter" tabindex="-1" style="width:100%;display:inline-block;" id="A200">
-<meta content="Los Angeles" itemprop="name" id="201"/>
-<meta content="4" itemprop="position" id="202"/>
-<meta content="https://www.YOURCOMPANY.com/venues/los-angeles--ca" itemprop="url" id="203"/>
-<a href="https://www.YOURCOMPANY.com/venues/los-angeles--ca" id="204">
-<div class="carousel" id="205">
-<div class="caption" id="206">
-<h4 class="no-margin" id="207">
-Los Angeles</h4>
-</div>
-<span class="img-container1"><img src="" alt="san deigo" width="235" height="93" id="13523"/></span></div>
-</a>
-</div>
-</div>
-</div>
-<div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline:none;width:14.285714285714286%;" id="209">
-<div id="210">
-<div class="col-xs-12 no-gutter" tabindex="-1" style="width:100%;display:inline-block;" id="A211">
-<meta content="Houston" itemprop="name" id="212"/>
-<meta content="5" itemprop="position" id="213"/>
-<meta content="https://www.YOURCOMPANY.com/venues/houston--tx" itemprop="url" id="214"/>
-<a href="https://www.YOURCOMPANY.com/venues/houston--tx" id="215">
-<div class="carousel" id="216">
-<div class="caption" id="217">
-<div class="text-xs heavy" id="218">
-NEW!</div>
-<h4 class="no-margin" id="219">
-Houston</h4>
-</div>
-<span class="img-container1"><img src="" alt="san deigo" width="235" height="93" id="13524"/></span></div>
-</a>
-</div>
-</div>
-<div id="221">
-<div class="col-xs-12 no-gutter" tabindex="-1" style="width:100%;display:inline-block;" id="A222">
-<meta content="San Francisco" itemprop="name" id="223"/>
-<meta content="6" itemprop="position" id="224"/>
-<meta content="https://www.YOURCOMPANY.com/venues/san-francisco--ca" itemprop="url" id="225"/>
-<a href="https://www.YOURCOMPANY.com/venues/san-francisco--ca" id="226">
-<div class="carousel" id="227">
-<div class="caption" id="228">
-<h4 class="no-margin" id="229">
-San Francisco</h4>
-</div>
-<span class="img-container1"><img src="" alt="san deigo" width="235" height="93" id="13525"/></span></div>
-</a>
-</div>
-</div>
-</div>
-<div data-index="2" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline:none;width:14.285714285714286%;" id="231">
-<div id="232">
-<div class="col-xs-12 no-gutter" tabindex="-1" style="width:100%;display:inline-block;" id="233">
-<meta content="Philadelphia" itemprop="name" id="234"/>
-<meta content="7" itemprop="position" id="235"/>
-<meta content="https://www.YOURCOMPANY.com/venues/philadelphia--pa" itemprop="url" id="236"/>
-<a href="https://www.YOURCOMPANY.com/venues/philadelphia--pa" id="237">
-<div class="carousel" id="238">
-<div class="caption" id="239">
-<div class="text-xs heavy" id="240">
-NEW!</div>
-<h4 class="no-margin" id="241">
-Philadelphia</h4>
-</div>
-<span class="img-container1"><img src="" alt="san deigo" width="235" height="93" id="13526"/></span></div>
-</a>
-</div>
-</div>
-<div id="243">
-<div class="col-xs-12 no-gutter" tabindex="-1" style="width:100%;display:inline-block;" id="244">
-<meta content="New York" itemprop="name" id="245"/>
-<meta content="8" itemprop="position" id="246"/>
-<meta content="https://www.YOURCOMPANY.com/venues/new-york--ny" itemprop="url" id="247"/>
-<a href="https://www.YOURCOMPANY.com/venues/new-york--ny" id="248">
-<div class="carousel" id="249">
-<div class="caption" id="250">
-<h4 class="no-margin" id="251">
-New York</h4>
-</div>
-<span class="img-container1"><img src="" alt="san deigo" width="235" height="93" id="13527"/></span></div>
-</a>
-</div>
-</div>
-</div>
-<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:14.285714285714286%;" id="253">
-</div>
-<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:14.285714285714286%;" id="254">
-</div>
-<div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:14.285714285714286%;" id="255">
-</div>
-</div>
-</div>
+
 
 </div>
-</div>
-</div>
-<div class="row margin-lg-top" id="259">
-<div class="col-xs-12" id="260">
-<a href="https://www.YOURCOMPANY.com/venues/locations" id="261">
 
-View all cities
-<i class="ico ico-sm icon-arrow-nav" id="263">
-</i>
-</a>
-</div>
-</div>
-</div>
-<div class="spaceSection carouselSections container" id="264">
-<div class="row" id="265">
-<div class="col-xs-12" id="266">
-<h4 id="267">
-Spaces of all kinds</h4>
-</div>
-</div>
-<div class="flex carousel-row" itemprop="itemListElement" itemtype="http://schema.org/ListItem" id="268">
-<div class="carousel-col" id="269">
-<div class="slick-slider slick-initialized" dir="ltr" id="270">
 
-<div class="slick-list" id="274">
-<div class="slick-track" style="width:300%;left:0%;" id="275">
-<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline:none;width:6.666666666666667%;" id="276">
-<div id="277">
-<div class="col-xs-12 no-gutter" tabindex="-1" style="width:100%;display:inline-block;" id="278">
-<meta content="Photo studio" itemprop="name" id="279"/>
-<meta content="2" itemprop="position" id="280"/>
-<meta content="https://www.YOURCOMPANY.com/plan/photo-studio" itemprop="url" id="281"/>
-<a href="https://www.YOURCOMPANY.com/plan/photo-studio" id="282">
-<div class="carousel" id="283">
-<div class="caption" id="284">
-<h4 class="no-margin" id="285">
-Photo studio</h4>
-</div>
-<span class="img-container1"><img src="" alt="san deigo" width="235" height="93" id="13528"/></span></div>
-</a>
-</div>
-</div>
-</div>
-<div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline:none;width:6.666666666666667%;" id="287">
-<div id="288">
-<div class="col-xs-12 no-gutter" tabindex="-1" style="width:100%;display:inline-block;" id="289">
-<meta content="Classroom" itemprop="name" id="290"/>
-<meta content="3" itemprop="position" id="291"/>
-<meta content="https://www.YOURCOMPANY.com/plan/classroom" itemprop="url" id="292"/>
-<a href="https://www.YOURCOMPANY.com/plan/classroom" id="293">
-<div class="carousel" id="294">
-<div class="caption" id="295">
-<h4 class="no-margin" id="296">
-Classroom</h4>
-</div>
-<span class="img-container1"><img src="" alt="san deigo" width="235" height="93" id="13529"/></span></div>
-</a>
-</div>
-</div>
-</div>
-<div data-index="2" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline:none;width:6.666666666666667%;" id="298">
-<div id="299">
-<div class="col-xs-12 no-gutter" tabindex="-1" style="width:100%;display:inline-block;" id="300">
-<meta content="Film studio" itemprop="name" id="301"/>
-<meta content="4" itemprop="position" id="302"/>
-<meta content="https://www.YOURCOMPANY.com/plan/film-studio" itemprop="url" id="303"/>
-<a href="https://www.YOURCOMPANY.com/plan/film-studio" id="304">
-<div class="carousel" id="305">
-<div class="caption" id="306">
-<h4 class="no-margin" id="307">
-Film studio</h4>
-</div>
-<span class="img-container1"><img src="" alt="san deigo" width="235" height="93" id="135210"/></span></div>
-</a>
-</div>
-</div>
-</div>
-<div data-index="3" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline:none;width:6.666666666666667%;" id="309">
-<div id="310">
-<div class="col-xs-12 no-gutter" tabindex="-1" style="width:100%;display:inline-block;" id="311">
-<meta content="Sound stage" itemprop="name" id="312"/>
-<meta content="5" itemprop="position" id="313"/>
-<meta content="https://www.YOURCOMPANY.com/plan/sound-stage" itemprop="url" id="314"/>
-<a href="https://www.YOURCOMPANY.com/plan/sound-stage" id="315">
-<div class="carousel" id="316">
-<div class="caption" id="317">
-<h4 class="no-margin" id="318">
-Sound stage</h4>
-</div>
-<span class="img-container1"><img src="" alt="san deigo" width="235" height="93" id="135211"/></span></div>
-</a>
-</div>
-</div>
-</div>
-<div data-index="4" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline:none;width:6.666666666666667%;" id="320">
-<div id="321">
-<div class="col-xs-12 no-gutter" tabindex="-1" style="width:100%;display:inline-block;" id="322">
-<meta content="Fitness studio" itemprop="name" id="323"/>
-<meta content="6" itemprop="position" id="324"/>
-<meta content="https://www.YOURCOMPANY.com/plan/fitness-studio" itemprop="url" id="325"/>
-<a href="https://www.YOURCOMPANY.com/plan/fitness-studio" id="326">
-<div class="carousel" id="327">
-<div class="caption" id="328">
-<h4 class="no-margin" id="329">
-Fitness studio</h4>
-</div>
-<span class="img-container1"><img src="" alt="san deigo" width="235" height="93" id="135212"/></span></div>
-</a>
-</div>
-</div>
-</div>
-<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:6.666666666666667%;" id="331">
-</div>
-<div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:6.666666666666667%;" id="332">
-</div>
-<div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:6.666666666666667%;" id="333">
-</div>
-<div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:6.666666666666667%;" id="334">
-</div>
-<div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:6.666666666666667%;" id="335">
-</div>
-<div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:6.666666666666667%;" id="336">
-</div>
-<div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:6.666666666666667%;" id="337">
-</div>
-<div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:6.666666666666667%;" id="338">
-</div>
-<div data-index="13" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:6.666666666666667%;" id="339">
-</div>
-<div data-index="14" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:6.666666666666667%;" id="340">
-</div>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-<div class="container" id="344">
-<div class="Banner img-rounded" id="345">
-<a href="https://www.YOURCOMPANY.com/download" id="346">
-<div class="banner-header" id="347">
-<h3 class="text-gray-800" id="348">
-Book spaces on the go</h3>
-            </div>
-</a>
-</div>
-</div>
-
-</div>
-</div>
-<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:16.666666666666668%;" id="575">
-</div>
-<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:16.666666666666668%;" id="576">
-</div>
-<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:16.666666666666668%;" id="577">
-</div>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-<div class="row margin-lg-top" id="581">
-<div class="col-xs-12" id="582">
-<a href="https://www.YOURCOMPANY.com/plan/corporate-event" id="583">
-
-Browse all corporate event spaces
-<i class="ico ico-sm icon-arrow-nav" id="585">
-</i>
-</a>
-</div>
-</div>
-</div>
-<div class="Blog" id="586">
-<div class="container carouselSections" id="587">
-<div class="row" id="588">
-<div class="col-xs-12" id="589">
-<h4 id="590">
-From the &lt;YOURCOMPANY&gt; blog</h4>
-</div>
-</div>
-<div class="carousel-row" id="591">
-<div class="slick-slider slick-initialized" dir="ltr" id="592">
-
-<div class="slick-list" id="596">
-<div class="slick-track" style="width:550%;left:0%;" id="597">
-<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline:none;width:9.090909090909092%;" id="598">
-<div id="599"></div>
-</div>
-<div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline:none;width:9.090909090909092%;" id="610">
-<div id="611"></div>
-</div>
-<div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:9.090909090909092%;" id="622">
-</div>
-<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:9.090909090909092%;" id="623">
-</div>
-<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:9.090909090909092%;" id="624">
-</div>
-<div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:9.090909090909092%;" id="625">
-</div>
-<div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:9.090909090909092%;" id="626">
-</div>
-<div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:9.090909090909092%;" id="627">
-</div>
-<div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:9.090909090909092%;" id="628">
-</div>
-<div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:9.090909090909092%;" id="629">
-</div>
-<div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:9.090909090909092%;" id="630">
-</div>
-</div>
-</div>
-
-</div>
-</div>
-<div class="row margin-lg-top" id="634">
-<div class="col-xs-12" id="635">
-<a href="https://www.YOURCOMPANY.com/resources" id="636">
-
-View all articles
-
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class="Testimonial" id="639">
-<div class="container" id="640">
-<div class="row" id="641">
-<div class="col-xs-12" id="642">
-
-        <h4 id="643">
-You can earn money as a host &lt;Put a title here&gt;</h4>
-</div>
-</div>
-<div class="testimonial-border flex" id="644">
-
-</div>
-<div class="quote flex-basis-60" id="647">
-<div class="quote-image" id="648">
-</div>
-<div class="quote-text" id="650">
-</div>
-<div class="quote-author flex" id="651">
-<span id="658">
-</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="BecomeAHost container" id="661">
-<img src="" id="662"/>
-</div>
-</div>
-</div>
-
-    </div>
-
-	
-	
-<footer data-reactroot="" id="A1" >
-
-	<div role="navigation" class="container-fluid" id="2">
-
-	<div class="row footer-content" id="3">
-
-	<div class="col-xs-12 col-md-4 col-lg-3 footer-YOURCOMPANY-connect" id="4">
-
-<img class="footer-logo" src="" id="5"/>
-
-<div id="6">
-</div>
-
-<div class="row hidden-xs margin-lg-top" id="9">
-<div class="col-xs-12" id="10">
-
-<p class="copyright" id="11">
-
-	
-© &lt;YOURCOMPANY&gt; - 
-
-	<a href="/terms" id="13">
-	Terms
-	</a><a href="/privacy" id="15">
-	Privacy</a>
-	</p>
-</div>
-	</div>
-</div>
-	<br class="visible-xs" id="16"/>
-	<div class="col-xs-12 col-md-7 col-lg-6 col-lg-offset-3" id="17">
-	<div class="row web-links" id="18">
-<div class="col-xs-12 col-sm-6 no-gutter" id="19">
-<div class="col-xs-6" id="20">
-	<p class="title" id="21">
-	Company
-	</p>
-	<p id="22">
-	<a id="footer_link_about" href="https://book.YOURCOMPANY.com/about" id="23">
-	About</a>
-	</p>
-	<p id="24">
-<a id="footer_link_press" href="//try.YOURCOMPANY.com/press/" id="25">
-	Press</a>
-	</p>
-	<p id="26">
-	<a id="footer_link_careers" href="https://jobs.lever.co/YOURCOMPANY" id="27">
-	Careers</a>
-	</p>
-	<p id="28">
-<a id="footer_link_blog" href="/blog" id="29">
-	Blog</a>
-	</p>
-	<p id="30">
-	<a id="footer_link_support" href="http://support.YOURCOMPANY.com/hc/en-us" id="31">
-	Support</a>
-	</p>
-	</div>
-	<div class="col-xs-6" id="32">
-<p class="title" id="33">
-	Social
-	</p>
-	<p id="34">
-	<a id="footer_link_facebook" href="https://www.facebook.com/YOURCOMPANY/" id="35">
-	Facebook</a>
-	</p>
-	<p id="36">
-<a id="footer_link_instagram" href="https://www.instagram.com/YOURCOMPANY/" id="37">
-	Instagram</a>
-	</p>
-	<p id="38">
-<a id="footer_link_twitter" href="https://twitter.com/YOURCOMPANY" id="39">
-	Twitter</a>
-	</p>
-	<p id="40">
-<a id="footer_link_linkedin" href="https://www.linkedin.com/company/YOURCOMPANY" id="41">
-	LinkedIn</a>
-	</p>
-	<p id="42">
-<a id="footer_link_pinterest" href="http://www.pinterest.com/YOURCOMPANY/" id="43">
-	Pinterest</a>
-	</p>
-	</div>
-	</div>
-	<div class="col-xs-12 col-sm-6 no-gutter" id="44">
-	<div class="col-xs-6" id="45">
-	<p class="title" id="46">
-	Explore
-	</p>
-	<p id="47">
-	<a href="/plan/activities" id="48">
-	Activities</a>
-	</p>
-	<p id="49">
-<a href="/venues/locations" id="50">
-	Locations</a>
-	</p>
-	<p id="51">
-	<a id="footer_link_services" href="https://try.YOURCOMPANY.com/services/" id="52">
-	Services</a>
-	</p>
-	<p id="53">
-<a id="footer_link_blog" href="/resources" id="54">
-	Resources</a>
-	</p>
-	<p id="55">
-<a id="footer_link_affiliate" href="https://book.YOURCOMPANY.com/affiliate/about" id="56">
-	Affiliate</a>
-	</p>
-	</div>
-	<div class="col-xs-6" id="57">
-<p class="title" id="58">
-	Host
-	</p>
-	<p id="59">
-	<a id="footer_link_host" href="/host" id="60">
-List Your Space</a>
-	</p>
-	<p id="61">
-<a id="footer_link_forum" href="https://community.YOURCOMPANY.com" id="62">
-Community</a>
-	</p>
-	</div>
-	</div>
-	</div>
-	</div>
-	<div class="container-fluid" id="63">
-	<div class="row visible-xs margin-xl-bottom" id="64">
-	<div class="col-xs-12" id="65">
-	<p class="copyright" id="66">
-© &lt;YOURCOMPANY&gt; - <!-- /react-text -->
-<a href="/terms" id="68">
-Terms</a><a href="/privacy" id="70">
-	Privacy</a>
-	</p>
-	</div>
-	</div>
-	</div>
-	</div>
-	</div>
-</footer>
 </body>
 </html>
 
