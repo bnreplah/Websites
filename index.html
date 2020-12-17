@@ -1,134 +1,223 @@
-
-<!doctype html>
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 
-<style media="screen">
-* {box-sizing: border-box;}
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color:black;
-  background-image:url('');
-  background-attachment:fixed;
+body{
+overflow-x:hidden;
+background-image:url('P3370418.jpg');
+background-attachment:fixed;
+
 }
 
-.topnav {
-  z-index:100;
-  position:fixed;
-  overflow: hidden;
-  background-color: #e9e9e9;
-  width:100%;
-  top:-42px;
-  transition:2s;
+div{
+display:inline-block;
 }
 
-.topnav:hover{
-  top:0%;
+.nav-bar{
+position:fixed;
+background-color: #929290;
+width:110%;
+min-height:145px;
+height:30%;
+top:-18%;
+left:0%;
+z-index:100;
+opacity:100%;
+transition:1s;
 }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.nav-bar:hover{
+top:0%;
+transition:1s;
+opacity:90%;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.nav-bar nav{
+position:relative;
+width:90%;
+height:30%;
+float:right;
+/*border:dotted black;*/
+align:center;
+margin-bottom:2%;
+float:left;
+}
+.nav-bar a{
+display:inline-block;
+text-align:center;
+color:black;
+border-radius:2px;
+padding-right:2%;
+padding-left:2%;
 }
 
-.topnav a.active {
-  background-color: #2196F3;
-  color: white;
+.nav-bar a:hover{
+background-color:black;
+color:white;
+transition:2s;
+
 }
 
-.topnav .search-container {
-  float: right;
+#title{
+position:relative;
+/*border:dotted black;*/
+bottom:-19%;
 }
 
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
+#title> h1{
+position:relative;
+color:white;
+margin-top:2.5%;
+width:100%;
+vertical-align:bottom;
 }
 
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
+
+
+
+.content{
+position:absolute;
+right:0px;
+left:-5px;
+width:100%;
+padding-left:5px;
+
 }
 
-.topnav .search-container button:hover {
-  background: #ccc;
+/*Image blocks*/
+
+.activities{
+padding:10px;
+position:relative;
+width:100%;
+z-index:10;
+margin-top:20%;
+background-color: silver;
+
 }
 
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
-}
-
-.mySlides {
-display: none;
-}
-
-img {
-vertical-align: middle;
-}
-
-/* Slideshow  */
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+.img-container {
   position: relative;
-  margin: auto;
+  text-align: center;
+  width:100%;
+  height:167.5px;
+  
+  border-radius:8px;
+  /*border: dotted black;*/
+}
+
+.img-container img{
+border-radius:5px;
+height:85%;
+width:100%;
+/*border:dotted black;*/
+}
+
+.caption{
+position:relative;
+background-color: #c7c6c7;
+bottom:7%;
+left:0%;
+width:100%;
+/*border:black dotted 1px;*/
+height:20%;
+border-radius:5px;
+z-index:-1;
+}
+.caption h3{
+bottom:17%;
+margin:5%;
+left:0px;
+cursor:pointer;
+width:85%;
+}
+
+
+
+a{
+text-decoration:none;
+color:#52a2b1;
+transition:2s;
+}
+a:hover{
+color:black;
+transition:2s;
+}
+
+a:active{
+color:black;
+}
+
+
+.block{
+box-shadow:-5px -1px 8px 0px grey ;
+border-radius:8px;
+height:167.5px;
+width:166.5px;
+margin:1%;
+transition:2s;
+}
+
+.block:hover{
+box-shadow:-10px 1px 7px 0px grey;
+color:black;
+transition:2s;
+
+}
+
+
+/*slideshow*/
+
+.slideshow{
+position:relative;
+margin-top:8%;
+right:0px;
+left:18px;
+width:100.25%;
+height:100%;
+/*border:solid black;*/
+z-index:10;
+border-radius:3px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
+  margin-top: -50px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
+  font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  -webkit-user-select: none;
 }
 
+.prev{
+left:0;
+}
 /* Position the "next button" to the right */
 .next {
   right: 0;
@@ -136,19 +225,9 @@ img {vertical-align: middle;}
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Number text (1/3 etc) */
@@ -160,28 +239,41 @@ img {vertical-align: middle;}
   top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+/* Container for image text */
+.caption-container {
+  position:absolute;
+  opacity:75%;
+  border-radius:10%;
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  top:50%;
+  right:15px;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  transition:1s;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+  transition:1s;
 }
 
 @-webkit-keyframes fade {
@@ -199,223 +291,381 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
-.cont{
-  position:absolute;
-  top:150px;
-  width:100%;
 
+#about{
+padding:10px;
+background-color: #dbdbb3;
+margin-top:20%;
+width:100%;
 }
 
-.header-cont{
-  width:100%;
-  min-height:95%;
-}
 
-.body-cont{
-  position:absolute;
-  background-color:white;
-  width:100%;
-  min-height:40%;
-  
-  
-}
-
-#content{
-  position:relative;
-  background-color:white;
-  width:100%;
-  min-height:20%;
-  top:200px;
-
+footer{
+position:absolute;
+width:100%;
+max-height:1000px;
+color: silver;
+background-color:black;
+margin-top:20%;
+opacity:85%;
 
 }
+footer > div{
+position:relative;
+width:50%;
+border:white solid;
 
-/* content stuff */
+}
+.footerlinks{
+width:100%;
 
+}
+#copyright{
+position:relative;
+bottom:0%;
+clear:both;
+
+}
 </style>
 </head>
 <body>
 
 
 
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-  <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
+
+
+
+
+
+<div class="nav-bar">
+
+
+<nav>
+<a href="#about"><h3>About</h3></a>
+<a href="#contact"><h3>Contact</h3></a>
+<a href="#reviews"><h3>Reviews</h3></a>
+</nav>
+
+<div id="title">
+<h1>Website name</h1>
+</div>
+
 </div>
 
 
+<div class="content">
+<div class="slideshow">
+<center>
+<!-- Container for the image gallery -->
+<div class="container">
 
-<div class="cont">
-<div class="header-cont">
-<!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="img1.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="http://cdn.differencebetween.net/wp-content/uploads/2016/08/woods-945405_640.jpg" style="width:100%">
   </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="img2.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="https://www.w3schools.com/howto/img_5terre.jpg" style="width:100%">
   </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="img3.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="https://www.w3schools.com/howto/img_mountains.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="https://www.w3schools.com/howto/img_lights.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="https://www.w3schools.com/howto/img_nature.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="https://www.w3schools.com/howto/img_snow.jpg" style="width:100%">
   </div>
 
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-<script>
-var slideIndex = 0;
-showSlides();
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
 
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="http://cdn.differencebetween.net/wp-content/uploads/2016/08/woods-945405_640.jpg" style="width:100%; height:100%;" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://www.w3schools.com/howto/img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://www.w3schools.com/howto/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://www.w3schools.com/howto/img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://www.w3schools.com/howto/img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://www.w3schools.com/howto/img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+  <script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-function showSlides() {
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 20000); // Change image every 2 seconds
+  captionText.innerHTML = dots[slideIndex-1].alt;
 }
-</script>
+
+  
+  </script>
+</div>
+</center>
+
 </div>
 
-<div class="body-cont">
-<h1>
-Body
-</h1>
+<div class="activities">
+<div class="subtitle" id="act-title">
+<h2>Rent Out A Studio</h2>
+</div>
+<center>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"><h3>Caption Text</h3> </div>
+</div>
+</a>
 
 </div>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"> <h3>Caption Text</h3> </div>
+</div>
+</a>
+</div>
 
-<div id="content">
-<h1>
-content
-</h1>
-      <ul class="dropdown-menu dropdown-menu-left" id="78">
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"><h3>Caption Text</h3> </div>
+</div>
+</a>
 
-      <li id="79">
+</div>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"> <h3>Caption Text</h3> </div>
+</div>
+</a>
+</div>
 
-      <a href="/plan/meeting" id="80">
-Meetings</a>
 
-      </li>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"><h3>Caption Text</h3> </div>
+</div>
+</a>
 
-      <li id="81">
+</div>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"> <h3>Caption Text</h3> </div>
+</div>
+</a>
+</div>
 
-      <a href="/plan/film-shoot" id="82">
-Film Shoots</a>
 
-      </li>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"><h3>Caption Text</h3> </div>
+</div>
+</a>
 
-      <li id="83">
+</div>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"> <h3>Caption Text</h3> </div>
+</div>
+</a>
+</div>
+</center>
+</div>
 
-      <a href="/plan/birthday-party" id="84">
-Birthday Parties</a>
+<div id="about">
+<div class="subtitles" id="abt-title">
+<h2>Who Are We?</h2>
+</div>
+<center>
+<dl>
+	<dd>
+    Some stuff about us
+    </dd>
 
-      </li>
+    <dd>
+    Some more stuff
+    </dd>
+    
+    <dd>
+   	some more more stuff 
+    
+    </dd>
 
-      <li id="85">
 
-      <a href="/plan/photo-shoot" id="86">
-Photo Shoots</a>
 
-      </li>
+</dl>
 
-      <li id="87">
+</center>
 
-      <a href="/plan/workshop" id="88">
-Workshops</a>
+</div>
+<footer>
+<h3>
+Some stuff in the footer
+</h3>
+<hr/>
+<div class="footerlinks">
+<div style="position:relative;width:45%; height:30%;float:left; background-color:blue;">
+<ul>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
 
-      </li>
 
-      <li id="89">
-<a href="/plan/baby-shower" id="90">
-Baby Showers</a>
 
-      </li>
-
-      <li id="91">
-<a href="/plan/dinner" id="92">
-Dinners</a>
-
-      </li>
-
-      <li id="93">
-<a href="/plan/wedding-reception" id="94">
-Weddings</a>
-
-      </li>
-<li id="95">
-<a href="/plan/training" id="96">
-Trainings</a>
-
-      </li>
-<li id="97">
-<a href="/plan/launch-event" id="98">
-Launch Parties</a>
-
-      </li>
-<li id="99">
-<a href="/plan/networking" id="100">
-Networking Events</a>
-
-      </li>
-<li id="101">
-<a href="/plan/performance" id="102">
-Performances</a>
-
-      </li>
-<li id="103">
-<a href="/plan/activities" id="104">
-See all activities</a>
-
-      </li>
 </ul>
 
 
 </div>
+<div style="position:relative; width:45%; height:30%; float:right; clear:right; background-color:blue;">
 
+<ul>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+
+
+
+</ul>
 
 
 
 </div>
 
+</div>
+
+<div class="footerlinks">
+<div style="position:relative;width:45%; height:30%;float:left; background-color:blue;">
+<ul>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+
+
+
+</ul>
+
+
+</div>
+<div style="position:relative; width:45%; height:30%; float:right; clear:right; background-color:blue;">
+
+<ul>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+<li><a href="">Some stuff</a></li>
+
+
+
+</ul>
+
+
+
+</div>
+
+</div>
+
+
+<div id="copyright">
+
+
+</div>
+
+</footer>
+
+</div>
+
+
 
 </body>
-</html>
-
+</html> 
