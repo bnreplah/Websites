@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,7 @@
 
 body{
 overflow-x:hidden;
-background-color:black;
+background-color: #f2e6ff;
 /*background-image:url('https://www.w3schools.com/howto/img_lights.jpg');*/
 background-attachment:fixed;
 
@@ -20,7 +21,7 @@ display:inline-block;
 
 .nav-bar{
 position:fixed;
-background-color: #929290;
+background-color: white;
 width:110%;
 min-height:145px;
 height:30%;
@@ -68,8 +69,8 @@ bottom:-19%;
 
 #title> h1{
 position:relative;
-color:white;
-margin-top:2.5%;
+color:black;
+margin-top:15%;
 width:100%;
 vertical-align:bottom;
 }
@@ -89,12 +90,13 @@ padding-left:5px;
 /*Image blocks*/
 
 .activities{
-padding:10px;
+padding:20px;
+padding-bottom:20px;
 position:relative;
 width:100%;
 z-index:10;
 margin-top:20%;
-background-color: silver;
+background-color: #cce6ff;
 
 }
 
@@ -138,11 +140,11 @@ width:85%;
 
 a{
 text-decoration:none;
-color:#52a2b1;
+color:#e6e600;
 transition:2s;
 }
 a:hover{
-color:black;
+color: #ffffcc;
 transition:2s;
 }
 
@@ -293,7 +295,7 @@ left:0;
 
 #about{
 padding:10px;
-background-color: #dbdbb3;
+background-color: #cce6ff;
 margin-top:20%;
 width:100%;
 }
@@ -323,6 +325,16 @@ width:100%;
 position:relative;
 bottom:0%;
 clear:both;
+
+}
+
+
+#health{
+padding:10px;
+background-color:#cce6ff;
+margin-top:20%;
+width:100%;
+min-height:50%;
 
 }
 </style>
@@ -462,100 +474,42 @@ function showSlides(n) {
 </div>
 </center>
 
+<div id="health">
+<div class="subtitles" id="abt-title">
+<h2>COVID-19 | What are we doing for your safety</h2>
 </div>
 
-<div class="activities">
-<div class="subtitle" id="act-title">
-<h2>Rent Out A Studio</h2>
-</div>
-<center>
-<div class="block">
-<a href="">
-<div class="img-container" id="i1">
-  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
-  
-  <div class="caption" style="width:100%;"><h3>Caption Text</h3> </div>
-</div>
-</a>
+<dl>
+	<dd>
+    <strong>Safety procedures in place</strong> <br>
+    <p>We implement all of the states requirments for operation and take your health and safety very seriously</p>
+    </dd>
 
-</div>
-<div class="block">
-<a href="">
-<div class="img-container" id="i1">
-  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
-  
-  <div class="caption" style="width:100%;"> <h3>Caption Text</h3> </div>
-</div>
-</a>
-</div>
+    <dd>
+    <strong>Things we are doing</strong><br>
+   	<p>At every part of our locations we have completmentary hadnsanitizer and our crew maintain social distancing along with required to wear masks at every point of the production</p>
+    </dd>
+    
+    <dd>
+   	<strong>some more more stuff</strong> 
+    <p></p>
+    </dd>
 
-<div class="block">
-<a href="">
-<div class="img-container" id="i1">
-  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
-  
-  <div class="caption" style="width:100%;"><h3>Caption Text</h3> </div>
-</div>
-</a>
 
-</div>
-<div class="block">
-<a href="">
-<div class="img-container" id="i1">
-  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
-  
-  <div class="caption" style="width:100%;"> <h3>Caption Text</h3> </div>
-</div>
-</a>
+
+</dl>
+
+
+
 </div>
 
 
-<div class="block">
-<a href="">
-<div class="img-container" id="i1">
-  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
-  
-  <div class="caption" style="width:100%;"><h3>Caption Text</h3> </div>
-</div>
-</a>
 
-</div>
-<div class="block">
-<a href="">
-<div class="img-container" id="i1">
-  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
-  
-  <div class="caption" style="width:100%;"> <h3>Caption Text</h3> </div>
-</div>
-</a>
-</div>
-
-
-<div class="block">
-<a href="">
-<div class="img-container" id="i1">
-  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
-  
-  <div class="caption" style="width:100%;"><h3>Caption Text</h3> </div>
-</div>
-</a>
-
-</div>
-<div class="block">
-<a href="">
-<div class="img-container" id="i1">
-  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
-  
-  <div class="caption" style="width:100%;"> <h3>Caption Text</h3> </div>
-</div>
-</a>
-</div>
-</center>
 </div>
 
 <div id="about">
 <div class="subtitles" id="abt-title">
-<h2>Who Are We?</h2>
+<h2>About Us</h2>
 </div>
 <center>
 <dl>
@@ -579,13 +533,262 @@ function showSlides(n) {
 </center>
 
 </div>
+
+
+
+<div class="activities">
+<div class="subtitle" id="act-title">
+<h2>Locations</h2>
+</div>
+<center>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"><h3>Los Angeles</h3> </div>
+</div>
+</a>
+
+</div>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"> <h3>Long Beach</h3> </div>
+</div>
+</a>
+</div>
+
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"><h3>New York</h3> </div>
+</div>
+</a>
+
+</div>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"> <h3>Los Vegas</h3> </div>
+</div>
+</a>
+</div>
+
+
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"><h3>Atlanta</h3> </div>
+</div>
+</a>
+
+</div>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"> <h3>Florida</h3> </div>
+</div>
+</a>
+</div>
+
+<br>
+<div>
+<h2> More locations</h2>
+<!-- drop down goes here -->
+</div>
+
+
+
+</center>
+</div>
+
+
+
+
+
+
+<div class="activities">
+<div class="subtitle" id="act-title">
+<h2>Production</h2>
+</div>
+<center>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"><h3>Locations</h3> </div>
+</div>
+</a>
+
+</div>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"> <h3>Gear</h3> </div>
+</div>
+</a>
+</div>
+
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"><h3>Supplies</h3> </div>
+</div>
+</a>
+
+</div>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"> <h3>Cars</h3> </div>
+</div>
+</a>
+</div>
+
+
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"><h3>Crew</h3> </div>
+</div>
+</a>
+
+</div>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"> <h3>Casting</h3> </div>
+</div>
+</a>
+</div>
+
+
+
+</center>
+</div>
+
+
+
+<div class="activities">
+<div class="subtitle" id="Events-title">
+<h2>Events</h2>
+</div>
+<center>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"><h3>Caption Text</h3> </div>
+</div>
+</a>
+
+</div>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"> <h3>Caption Text</h3> </div>
+</div>
+</a>
+</div>
+
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"><h3>Caption Text</h3> </div>
+</div>
+</a>
+
+</div>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"> <h3>Caption Text</h3> </div>
+</div>
+</a>
+</div>
+
+
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"><h3>Caption Text</h3> </div>
+</div>
+</a>
+
+</div>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"> <h3>Caption Text</h3> </div>
+</div>
+</a>
+</div>
+
+
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"><h3>Caption Text</h3> </div>
+</div>
+</a>
+
+</div>
+<div class="block">
+<a href="">
+<div class="img-container" id="i1">
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  
+  <div class="caption" style="width:100%;"> <h3>Caption Text</h3> </div>
+</div>
+</a>
+</div>
+</center>
+</div>
+
+
+
 <footer>
 <h3>
 Some stuff in the footer
 </h3>
 <hr/>
 <div class="footerlinks">
-<div style="position:relative;width:45%; height:30%;float:left; background-color:blue;">
+<div style="position:relative;width:45%; height:30%;float:left; ">
 <ul>
 <li><a href="">Some stuff</a></li>
 <li><a href="">Some stuff</a></li>
@@ -601,7 +804,7 @@ Some stuff in the footer
 
 
 </div>
-<div style="position:relative; width:45%; height:30%; float:right; clear:right; background-color:blue;">
+<div style="position:relative; width:45%; height:30%; float:right; clear:right; ">
 
 <ul>
 <li><a href="">Some stuff</a></li>
